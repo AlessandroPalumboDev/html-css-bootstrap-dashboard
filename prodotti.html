@@ -61,10 +61,10 @@
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <span class="fs-4">Bootstrap Dashboard</span>
       </a>
-      <hr>
+      <hr class="text-light">
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link link-body-emphasis align-items-center d-flex" aria-current="page">
+          <a href="#" class="nav-link align-items-center d-flex text-white" aria-current="page">
             <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512">
               <path
@@ -115,7 +115,7 @@
           </a>
         </li>
       </ul>
-      <hr>
+      <hr class="text-light">
       <div class="dropdown">
         <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown" aria-expanded="false">
@@ -133,8 +133,42 @@
       </div>
     </div>
 
+    <!-- CONTENUTO DI DESTRA -->
+    <div class="container-fluid overflow-y-auto">
 
-    
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="border" scope="col-9">Nome</th>
+              <th class="border d-none d-sm-table-cell" scope="col-1">Prezzo</th>
+              <th class="border d-none d-md-table-cell" scope="col-1">Stato</th>
+              <th class="border" scope="col-1">Azioni</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="d-flex">
+                <img src="https://picsum.photos/50" alt="">
+                <div class="ms-3">
+                  <p class="my-0">Smartphone Samsung Galaxy S21</p>
+                  <p class="text-secondary my-0 d-none d-xl-block">Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</p>
+                </div>
+              </td>
+
+              <td class="d-none d-sm-table-cell">prezzo</td>
+              <td class="d-none d-md-table-cell">stato</td>
+              <td>Cell</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+
 
   </main>
 </body>
