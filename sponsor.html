@@ -54,11 +54,11 @@
   </header>
 
   <!-- MAIN -->
-  <main>
+  <main class="d-flex overflow-y-hidden" style="height: 100vh;">
 
     <!-- SLIDEBAR -->
     <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary d-none d-sm-none d-md-block" data-bs-theme="dark"
-      style="width: 300px; height: 200vh;">
+      style="width: 300px;">
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <span class="fs-4">Bootstrap Dashboard</span>
       </a>
@@ -134,8 +134,97 @@
       </div>
     </div>
 
+    <!-- CONTENUTO DI DESTRA -->
+    <div class="container-fluid overflow-y-auto">
+
+      <!-- PRIMA SEZIONE -->
+      <div class="container p-5">
+        <div class="row d-flex justify-content-center mb-4">
+          <div class="col-9 col-md-8 col-lg-12 d-flex flex-column justify-content-center">
+            <h2 class="fw-semibold text-center mb-3">
+              Trova il piano pefetto per te!
+            </h2>
+            <p class="text-center lead">
+              Sceglie tra le nostre opzioni di abbonamento e goditi funzionalità <br> esclusive e performance migliori.
+            </p>
+            <p class="text-center fw-semibold">
+              Porta la tua esperienza al livello successivo!
+            </p>
+            <div class="mx-auto">
+              <button type="button" class="btn btn-primary btn-lg rounded-5">Scopri di più</button>
+              <button type="button" class="btn btn-lg btn-outline-secondary rounded-5">Contattaci</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECONDA SEZIONE -->
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
 
   </main>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
