@@ -1,200 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuovo Prodotto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuovo Prodotto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
 
-    <!-- HEADER CON NAVBAR -->
-    <header class="d-block d-sm-block d-md-none">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Dashboard</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sponsor.html">Sponsorizzazione</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="prodotti.html" >Prodotti</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="nuovo-prodotto.html">Nuovo prodotto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Clienti</a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav mt-5">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Impostazioni</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Profilo</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Esci</a>
-                    </li>
-                  </ul>
+  <!-- HEADER CON NAVBAR -->
+  <header class="d-block d-sm-block d-md-none sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sponsor.html">Sponsorizzazione</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Prodotti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="nuovo-prodotto.html">Nuovo prodotto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clienti</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mt-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Impostazioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profilo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Esci</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="d-flex" style="height: 100vh;">
+
+    <!-- SLIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary d-none d-sm-none d-md-block" data-bs-theme="dark" >
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <span class="fs-4">Bootstrap Dashboard</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis align-items-center d-flex" aria-current="page">
+            <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512">
+              <path
+                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="sponsor.html" class="nav-link link-body-emphasis align-items-center d-flex">
+            <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path
+                d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z" />
+            </svg>
+            Sponsorizzazione
+          </a>
+        </li>
+        <li>
+          <a href="prodotti.html" class="nav-link link-body-emphasis align-items-center d-flex">
+            <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M50.7 58.5L0 160H208V32H93.7C75.5 32 58.9 42.3 50.7 58.5zM240 160H448L397.3 58.5C389.1 42.3 372.5 32 354.3 32H240V160zm208 32H0V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192z" />
+            </svg>
+            Prodotti
+          </a>
+        </li>
+        <li>
+          <a href="nuovo-prodotto.html" class="nav-link link-body-emphasis align-items-center d-flex active">
+            <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+              >
+            </svg>
+            Nuovo Prodotto
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link link-body-emphasis align-items-center d-flex">
+            <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+            Clienti
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Mario Rossi</strong>
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+          <li><a class="dropdown-item" href="#">Profilo</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Esci</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTENUTO DI DESTRA -->
+    <div class="container-fluid overflow-y-auto">
+      <!-- NUOVO PRODOTTO -->
+      <div class="container mt-4">
+        <div class="row d-flex justify-content-center mb-4">
+          <div class="col-9 col-md-8 col-lg-12">
+            <h2 class="fw-semibold text-center mb-3">
+              Crea nuovo prodotto
+            </h2>
+            <p class="text-center lead">
+              I campi contrassegnati con un asterisco (*) sono obbligatori. <br> Le immagini devono essere in formato PNG
+              e non devono superare i 4 MB di dimensione.
+            </p>
+          </div>
+        </div>
+  
+        <!-- FORM -->
+          <!-- COLONNA DI SINISTRA -->
+        <div class="container form">
+          <div class="row d-lg-flex justify-content-center">
+            <div class="col-12 col-lg-7 mb-3">
+              <div class="mb-3 d-md-flex align-items-center">
+                <label for="exampleInputname" class="form-label me-5 pe-5">Nome</label>
+                <input type="name" class="form-control" id="exampleInputname" aria-describedby="name"
+                  placeholder="Samsung Galaxy 10 Plus">
+              </div>
+              <div class="mb-3 d-md-flex align-items-center">
+                <label for="exampleInputname" class="form-label me-5 pe-5">Prezzo</label>
+                <input type="number" class="form-control" id="exampleInputname" aria-describedby="name" placeholder="99.00">
+              </div>
+              <div class="mb-3 d-md-flex align-items-center">
+                <label class="form-label me-5 pe-5">Marca</label>
+                <select class="form-select form-select-md mb-3" aria-label="medium select example">
+                  <option selected>--- Seleziona ---</option>
+                  <option value="1">Samsung</option>
+                  <option value="2">Sony</option>
+                  <option value="3">Xiaomi</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
+                  id="floatingTextarea2" style="height: 150px;"></textarea>
+              </div>
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                  aria-label="Upload">
+                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Immagine</button>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
+    
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
+    
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio3">Fuori produzione</label>
+    
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio4">In arrivo</label>
               </div>
             </div>
-          </nav>
-    </header>
-
-<!-- MAIN -->
-    <main class="d-flex">
-
-        <!-- SLIDEBAR -->
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary d-none d-sm-none d-md-block" data-bs-theme="dark" style="width: 300px; height: 200vh;">
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <span class="fs-4">Bootstrap Dashboard</span>
-            </a>
-            <hr>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link link-body-emphasis align-items-center d-flex" aria-current="page">
-                  <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="sponsor.html" class="nav-link link-body-emphasis align-items-center d-flex">
-                  <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
-                  Sponsorizzazione
-                </a>
-              </li>
-              <li>
-                <a href="prodotti.html" class="nav-link link-body-emphasis align-items-center d-flex">
-                  <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M50.7 58.5L0 160H208V32H93.7C75.5 32 58.9 42.3 50.7 58.5zM240 160H448L397.3 58.5C389.1 42.3 372.5 32 354.3 32H240V160zm208 32H0V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192z"/></svg>
-                  Prodotti
-                </a>
-              </li>
-              <li>
-                <a href="nuovo-prodotto.html" class="nav-link link-body-emphasis align-items-center d-flex active">
-                  <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>></svg>
-                  Nuovo Prodotto
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-body-emphasis align-items-center d-flex">
-                  <svg class="bi pe-none me-2" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
-                  Clienti
-                </a>
-              </li>
-            </ul>
-            <hr>
-            <div class="dropdown">
-              <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>Mario Rossi</strong>
-              </a>
-              <ul class="dropdown-menu text-small shadow">
-                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                <li><a class="dropdown-item" href="#">Profilo</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Esci</a></li>
+            <!-- COLONNA DI DESTRA -->
+            <div class="col-12 col-lg-5 mb-3">
+              <ul class="list-group">
+                <li class="list-group-item d-flex py-1">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                  <label class="form-check-label" for="firstCheckbox">Fotocamera principale <p
+                      class="text-secondary text-small mb-0">foto di alta qualità eregistrare video nitidi</p></label>
+                </li>
+                <li class="list-group-item d-flex py-1">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                  <label class="form-check-label" for="secondCheckbox">Schermo OLED<p class="text-secondary text-small mb-0">
+                      offre colori vividi per un'esperienza visiva straordinaria.</p></label>
+                </li>
+                <li class="list-group-item d-flex py-1">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                  <label class="form-check-label" for="thirdCheckbox">processore Octa-core<p
+                      class="text-secondary text-small mb-0">prestazioni fluide e elociu per eseguire le applicazioni più
+                      esigenti</p></label>
+                </li>
+                <li class="list-group-item d-flex py-1">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                  <label class="form-check-label" for="firstCheckbox">ricarica wireless<p class="text-secondary text-small mb-0">
+                      consente di ricaricare lo smartphone comodamente senza l'uso di cavi</p></label>
+                </li>
+                <li class="list-group-item d-flex py-1">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                  <label class="form-check-label" for="secondCheckbox">conessione 5G<p class="text-secondary text-small mb-0">
+                      navigazione ultra veloce e streaming senza interruzioni</p></label>
+                </li>
+                <li class="list-group-item d-flex py-1">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                  <label class="form-check-label" for="thirdCheckbox">tecnologia NFC<p class="text-secondary text-small mb-0">per
+                      effettuare pagamenti senza contatto</p></label>
+                </li>
               </ul>
             </div>
-        </div>
-
-        <!-- NUOVO PRODOTTO -->
-        <div class="container mt-4">
-            <div class="row d-flex justify-content-center mb-4">
-                <div class="col-9 col-md-8 col-lg-12">
-                    <h2 class="fw-semibold text-center mb-4">
-                        Crea nuovo prodotto
-                    </h2>
-                    <p class="text-center">
-                        I campi contrassegnati con un asterisco (*) sono obbligatori. <br> Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione.
-                    </p>
-                </div>
+            <div class="col-12 mb-4">
+              <button type="submit" class="btn btn-primary text-center">Salva</button>
             </div>
-
-            <!-- FORM -->
-            <div class="form mb-5 d-lg-flex flex-wrap grid gap-1">
-                <div class="col-11 mx-auto col-lg-5 mx-le-0">
-                    <div class="mb-3 d-md-flex align-items-center">
-                        <label for="exampleInputname" class="form-label me-5 pe-5">Nome</label>
-                        <input type="name" class="form-control" id="exampleInputname" aria-describedby="name" placeholder="Samsung Galaxy 10 Plus">
-                    </div>
-                    <div class="mb-3 d-md-flex align-items-center">
-                        <label for="exampleInputname" class="form-label me-5 pe-5">Prezzo</label>
-                        <input type="name" class="form-control" id="exampleInputname" aria-describedby="name" placeholder="99.00">
-                    </div>
-                    <div class="mb-3 d-md-flex align-items-center">
-                        <label class="form-label me-5 pe-5">Marca</label>
-                        <select class="form-select form-select-md mb-3" aria-label="medium select example">
-                            <option selected>--- Seleziona ---</option>
-                            <option value="1">Samsung</option>
-                            <option value="2">Sony</option>
-                            <option value="3">Xiaomi</option>
-                          </select>
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" id="floatingTextarea2" style="height: 150px"></textarea>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Immagine</button>
-                    </div>
-                    <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
-                      
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
-                      
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btnradio3">Fuori produzione</label>
-
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btnradio4">In arrivo</label>
-                      </div>
-                </div>
-                <div class="col-11 mx-auto col-lg-5 ms-lg-0 mb-3">
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex">
-                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                          <label class="form-check-label" for="firstCheckbox">Fotocamera principale <p class="text-secondary text-small">foto di alta qualità eregistrare video nitidi</p></label>
-                        </li>
-                        <li class="list-group-item">
-                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                          <label class="form-check-label" for="secondCheckbox">Schermo OLED<p class="text-secondary text-small">offre colori vividi per un'esperienza visiva straordinaria.</p></label>
-                        </li>
-                        <li class="list-group-item d-flex">
-                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                          <label class="form-check-label" for="thirdCheckbox">processore Octa-core<p class="text-secondary text-small">prestazioni fluide e elociu per eseguire le applicazioni più esigenti</p></label>
-                        </li>
-                        <li class="list-group-item d-flex">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                            <label class="form-check-label" for="firstCheckbox">ricarica wireless<p class="text-secondary text-small">consente di ricaricare lo smartphone comodamente senza l'uso di cavi</p></label>
-                          </li>
-                          <li class="list-group-item d-flex">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                            <label class="form-check-label" for="secondCheckbox">conessione 5G<p class="text-secondary text-small">navigazione ultra veloce e streaming senza interruzioni</p></label>
-                          </li>
-                          <li class="list-group-item d-flex">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                            <label class="form-check-label" for="thirdCheckbox">tecnologia NFC<p class="text-secondary text-small">per effettuare pagamenti senza contatto</p></label>
-                          </li>
-                      </ul>
-                </div>
-                <div class="col-11 mx-auto col-lg-11 ps-3">
-                    <button type="submit" class="btn btn-primary">Salva</button>
-
-                </div>
-            </div>
+          </div>
         </div>
-    </main>
+      </div>
+      
+    </div>
+  </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
